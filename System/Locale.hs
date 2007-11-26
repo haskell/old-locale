@@ -10,7 +10,8 @@
 --
 -- This module provides the ability to adapt to local conventions.
 -- At present, it supports only time and date information as used by
--- 'System.Time.calendarTimeToString' from the "System.Time" module.
+-- System.Time.calendarTimeToString from the System.Time module in the
+-- old-time package.
 --
 -----------------------------------------------------------------------------
 
