@@ -76,8 +76,8 @@ defaultTimeLocale =  TimeLocale {
 -- but we can add a time spec.
 
 iso8601DateFormat :: Maybe String -> String
-iso8601DateFormat timeFmt =
-    "%Y-%m-%d" ++ case timeFmt of
+iso8601DateFormat mTimeFmt =
+    "%Y-%m-%d" ++ case mTimeFmt of
              Nothing  -> "" 
              Just fmt -> ' ' : fmt
 
