@@ -4,6 +4,7 @@ license:	BSD3
 license-file:	LICENSE
 maintainer:	libraries@haskell.org
 synopsis:	locale library
+category:       System
 description:
     This package provides the old locale library.
     For new code, the new locale library is recommended.
