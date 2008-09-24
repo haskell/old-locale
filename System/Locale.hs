@@ -79,7 +79,7 @@ iso8601DateFormat :: Maybe String -> String
 iso8601DateFormat mTimeFmt =
     "%Y-%m-%d" ++ case mTimeFmt of
              Nothing  -> "" 
-             Just fmt -> ' ' : fmt
+             Just fmt -> 'T' : fmt
 
 
 rfc822DateFormat :: String
