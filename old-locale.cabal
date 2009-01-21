@@ -3,13 +3,21 @@ version:	1.0.0.1
 license:	BSD3
 license-file:	LICENSE
 maintainer:	libraries@haskell.org
+bug-reports: http://hackage.haskell.org/trac/ghc/newticket?component=libraries%20%28other%29
 synopsis:	locale library
 category:       System
 description:
     This package provides the old locale library.
     For new code, the new locale library is recommended.
 build-type: Simple
-exposed-modules:
-	System.Locale
-build-depends: base
+Cabal-Version: >= 1.2
+
+Library
+    exposed-modules:
+        System.Locale
+    build-depends: base
+
+source-repository head
+    type:     darcs
+    location: http://darcs.haskell.org/packages/old-locale/
 
