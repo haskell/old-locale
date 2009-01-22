@@ -10,7 +10,7 @@ description:
     This package provides the old locale library.
     For new code, the new locale library is recommended.
 build-type: Simple
-Cabal-Version: >= 1.2
+Cabal-Version: >= 1.6
 
 Library
     exposed-modules:
