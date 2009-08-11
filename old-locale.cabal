@@ -15,7 +15,7 @@ Cabal-Version: >= 1.6
 Library
     exposed-modules:
         System.Locale
-    build-depends: base
+    build-depends: base >= 3 && < 5
 
 source-repository head
     type:     darcs
