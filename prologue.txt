@@ -1,2 +1,0 @@
-This package provides the old locale library.
-For new code, the new locale library is recommended.

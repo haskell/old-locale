@@ -1,14 +1,14 @@
-name:		old-locale
-version:	1.0.0.4
-license:	BSD3
-license-file:	LICENSE
-maintainer:	libraries@haskell.org
-bug-reports: http://hackage.haskell.org/trac/ghc/newticket?component=libraries%20%28other%29
-synopsis:	locale library
-category:       System
+name:         old-locale
+version:      1.0.0.4
+license:      BSD3
+license-file: LICENSE
+maintainer:   libraries@haskell.org
+bug-reports:  http://hackage.haskell.org/trac/ghc/newticket?component=libraries%20%28other%29
+synopsis:     locale library
+category:     System
 description:
-    This package provides the old locale library.
-    For new code, the new locale library is recommended.
+    This package provides the ability to adapt to
+    locale conventions such as date and time formats.
 build-type: Simple
 Cabal-Version: >= 1.6
 
