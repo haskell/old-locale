@@ -1,5 +1,6 @@
 name:         old-locale
 version:      1.0.0.5
+-- GHC 7.6.1 released with 1.0.0.5
 license:      BSD3
 license-file: LICENSE
 maintainer:   libraries@haskell.org
