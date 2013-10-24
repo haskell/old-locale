@@ -7,7 +7,7 @@
 -- Module      :  System.Locale
 -- Copyright   :  (c) The University of Glasgow 2001
 -- License     :  BSD-style (see the file libraries/base/LICENSE)
--- 
+--
 -- Maintainer  :  libraries@haskell.org
 -- Stability   :  stable
 -- Portability :  portable
@@ -24,7 +24,7 @@ module System.Locale (
     TimeLocale(..)
 
     , defaultTimeLocale
-    
+
     , iso8601DateFormat
     , rfc822DateFormat
     )
@@ -33,23 +33,23 @@ where
 import Prelude
 
 data TimeLocale = TimeLocale {
-	-- |full and abbreviated week days
+        -- |full and abbreviated week days
         wDays  :: [(String, String)],
-	-- |full and abbreviated months
+        -- |full and abbreviated months
         months :: [(String, String)],
         intervals :: [(String, String)],
-	-- |AM\/PM symbols
+        -- |AM\/PM symbols
         amPm   :: (String, String),
-	-- |formatting strings
+        -- |formatting strings
         dateTimeFmt, dateFmt,
-        timeFmt, time12Fmt :: String     
+        timeFmt, time12Fmt :: String
         } deriving (Eq, Ord, Show)
 
-defaultTimeLocale :: TimeLocale 
-defaultTimeLocale =  TimeLocale { 
-        wDays  = [("Sunday",   "Sun"),  ("Monday",    "Mon"),   
-                  ("Tuesday",  "Tue"),  ("Wednesday", "Wed"), 
-                  ("Thursday", "Thu"),  ("Friday",    "Fri"), 
+defaultTimeLocale :: TimeLocale
+defaultTimeLocale =  TimeLocale {
+        wDays  = [("Sunday",   "Sun"),  ("Monday",    "Mon"),
+                  ("Tuesday",  "Tue"),  ("Wednesday", "Wed"),
+                  ("Thursday", "Thu"),  ("Friday",    "Fri"),
                   ("Saturday", "Sat")],
 
         months = [("January",   "Jan"), ("February",  "Feb"),
@@ -82,7 +82,7 @@ defaultTimeLocale =  TimeLocale {
 iso8601DateFormat :: Maybe String -> String
 iso8601DateFormat mTimeFmt =
     "%Y-%m-%d" ++ case mTimeFmt of
-             Nothing  -> "" 
+             Nothing  -> ""
              Just fmt -> 'T' : fmt
 
 
