@@ -1,5 +1,5 @@
 {-# LANGUAGE CPP #-}
-#if __GLASGOW_HASKELL__ >= 701
+#if __GLASGOW_HASKELL__ >= 701 && MIN_VERSION_base(4,4,1)
 {-# LANGUAGE Safe #-}
 #endif
 -----------------------------------------------------------------------------
