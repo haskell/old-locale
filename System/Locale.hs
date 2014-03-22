@@ -6,16 +6,17 @@
 -- |
 -- Module      :  System.Locale
 -- Copyright   :  (c) The University of Glasgow 2001
--- License     :  BSD-style (see the file libraries/base/LICENSE)
+-- License     :  BSD3 (see LICENSE file)
 --
 -- Maintainer  :  libraries@haskell.org
 -- Stability   :  stable
 -- Portability :  portable
 --
 -- This module provides the ability to adapt to local conventions.
+--
 -- At present, it supports only time and date information as used by
--- System.Time.calendarTimeToString from the System.Time module in the
--- old-time package.
+-- @calendarTimeToString@ from the @System.Time@ module in the
+-- @old-time@ package.
 --
 -----------------------------------------------------------------------------
 
@@ -76,8 +77,15 @@ defaultTimeLocale =  TimeLocale {
         }
 
 
--- |Normally, ISO-8601 just defines YYYY-MM-DD
--- but we can add a time spec.
+{- | Construct format string according to <http://en.wikipedia.org/wiki/ISO_8601 ISO-8601>.
+
+The @Maybe String@ argument allows to supply an optional time specification. E.g.:
+
+@
+'iso8601DateFormat' Nothing            == "%Y-%m-%d"           -- i.e. @/YYYY-MM-DD/@
+'iso8601DateFormat' (Just "%H:%M:%S")  == "%Y-%m-%dT%H:%M:%S"  -- i.e. @/YYYY-MM-DD/T/HH:MM:SS/@
+@
+-}
 
 iso8601DateFormat :: Maybe String -> String
 iso8601DateFormat mTimeFmt =
@@ -85,6 +93,6 @@ iso8601DateFormat mTimeFmt =
              Nothing  -> ""
              Just fmt -> 'T' : fmt
 
-
+-- | Format string according to <http://tools.ietf.org/html/rfc822#section-5 RFC822>.
 rfc822DateFormat :: String
 rfc822DateFormat = "%a, %_d %b %Y %H:%M:%S %Z"

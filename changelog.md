@@ -4,6 +4,8 @@
 
   * Bundled with GHC 7.8.1
 
+  * Update Haddock comments
+
   * Update to Cabal 1.10 format
 
 ## 1.0.0.5  *Sep 2012*
