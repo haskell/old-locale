@@ -14,11 +14,14 @@ description:
     This package provides the ability to adapt to
     locale conventions such as date and time formats.
 
+extra-source-files:
+    changelog.md
+
 source-repository head
     type:     git
     location: http://git.haskell.org/packages/old-locale.git
 
-source-repository head
+source-repository this
     type:     git
     location: http://git.haskell.org/packages/old-locale.git
     tag:      old-locale-1.0.0.6-release
