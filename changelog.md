@@ -1,8 +1,8 @@
 # Changelog for [`old-locale` package](http://hackage.haskell.org/package/old-locale)
 
-## 1.0.0.7  *TBA*
+## 1.0.0.7  *Nov 2014*
 
-  * Bundled with GHC 7.10.1
+  * Decoupled from GHC distribution
 
 ## 1.0.0.6  *Mar 2014*
 
