@@ -93,6 +93,6 @@ iso8601DateFormat mTimeFmt =
              Nothing  -> ""
              Just fmt -> 'T' : fmt
 
--- | Format string according to <http://tools.ietf.org/html/rfc822#section-5 RFC822>.
+-- | Format string according to <https://datatracker.ietf.org/doc/html/rfc822#section-5 RFC822>.
 rfc822DateFormat :: String
 rfc822DateFormat = "%a, %_d %b %Y %H:%M:%S %Z"
